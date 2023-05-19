@@ -11,6 +11,6 @@ module circlegon(numSides, radius)
         shapePoints = [for (shapeAngel = [0:360/numSides:360-1]) circleCoordinate(radius, shapeAngel)];
 
         // Create a polygon of the list of circle coordinates
-        polygon(points = shapeCorners);
+        polygon(points = shapePoints);
     }
 }
